@@ -1,0 +1,240 @@
+/* Estilos gerais da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Fundo escuro */
+    color: #e0e0e0; /* Texto claro */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Usar Flexbox para o corpo */
+    flex-direction: column; /* Organiza na coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    height: 100vh; /* Altura total da tela */
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #1e1e1e; /* Cor do cabeçalho */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #007bff; /* Borda inferior para destaque */
+    width: 100%; /* Largura total do cabeçalho */
+}
+
+/* Estilo do título do cabeçalho */
+header h1 {
+    color: #ffffff;
+    margin: 0;
+}
+
+/* Estilo para os botões de navegação no topo */
+header .btn-group {
+    display: flex;
+    gap: 10px; /* Espaçamento entre os botões */
+}
+
+/* Estilo do nav */
+nav {
+    margin-top: 10px; /* Espaçamento entre o título e a nav */
+}
+
+nav a {
+    color: #e0e0e0; /* Cor do texto dos links */
+    margin: 0 10px; /* Espaçamento entre os links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Destaque no texto */
+}
+
+nav a:hover {
+    color: #007bff; /* Cor ao passar o mouse */
+}
+
+/* Estilo do contêiner */
+.container {
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilo do contêiner principal para o login */
+.main-content {
+    display: flex; /* Usar Flexbox para centralização interna */
+    flex: 1; /* Ocupa todo o espaço disponível */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 20px; /* Adiciona um padding interno */
+}
+
+/* Estilo da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #1e1e1e; /* Fundo da tabela */
+}
+
+table, th, td {
+    border: 1px solid #333; /* Borda da tabela */
+}
+
+th, td {
+    padding: 10px; /* Espaçamento das células */
+    text-align: left; /* Alinhamento do texto */
+}
+
+th {
+    background-color: #007bff; /* Cor de fundo do cabeçalho da tabela */
+    color: #ffffff; /* Cor do texto no cabeçalho */
+}
+
+td {
+    background-color: #2a2a2a; /* Fundo das células */
+}
+
+/* Estilo do formulário */
+.form-container {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    max-width: 400px; /* Largura máxima do formulário */
+    width: 100%; /* Largura total do formulário */
+}
+
+form {
+    margin: 0;
+}
+
+form label {
+    color: #e0e0e0;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"] {
+    width: calc(100% - 22px); /* mesma largura para todos os campos */
+    padding: 10px; /* mesmo preenchimento */
+    border: 1px solid #333; /* mesma borda */
+    border-radius: 5px; /* mesmo arredondamento */
+    background-color: #333; /* mesma cor de fundo */
+    color: #e0e0e0; /* mesma cor de texto */
+    margin-bottom: 10px; /* espaço entre os campos */
+}
+
+form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; /* largura do botão igual ao campo */
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo do botão de registrar */
+form button[type="submit"] {
+    background-color: #28a745; /* Verde para registrar */
+}
+
+form button[type="submit"]:hover {
+    background-color: #218838; /* Verde escuro ao passar o mouse */
+}
+
+/* Estilo para link de "Registre-se aqui" */
+form p {
+    color: #e0e0e0; /* Cor do texto do parágrafo */
+    text-align: center; /* Centraliza o texto */
+}
+
+form p a {
+    color: #007bff; /* Cor do link */
+    text-decoration: none; /* Remove sublinhado */
+    font-weight: bold; /* Texto negrito */
+}
+
+form p a:hover {
+    color: #0056b3; /* Cor ao passar o mouse */
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto; /* Faz com que o rodapé fique sempre na parte inferior */
+}
+
+/* Estilos para botões */
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline dos links */
+    display: inline-block; /* Para que o padding funcione */
+    margin: 5px 0; /* Margem para separar os botões */
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn-delete {
+    background-color: #dc3545; /* Vermelho para deletar */
+}
+
+.btn-delete:hover {
+    background-color: #c82333; /* Vermelho escuro */
+}
+
+.btn-danger {
+    background-color: #dc3545; /* Vermelho para confirmação de deleção */
+}
+
+.btn-danger:hover {
+    background-color: #c82333; /* Vermelho escuro */
+}
+
+.btn-cancel {
+    background-color: #6c757d; /* Cinza para cancelar */
+}
+
+.btn-cancel:hover {
+    background-color: #5a6268; /* Cinza escuro */
+}
+
+.btn-new {
+    background-color: #28a745; /* Verde para novo */
+}
+
+.btn-new:hover {
+    background-color: #218838; /* Verde escuro */
+}
+
+.form-container p {
+    margin-top: 20px; /* Espaçamento superior para separar do formulário */
+}
+
+.form-container p {
+    color: #e0e0e0; /* Cor do texto do parágrafo */
+    text-align: center; /* Centraliza o texto */
+    margin-top: 20px; /* Espaçamento superior para separar do formulário */
+}
+
+.form-container p a {
+    color: #007bff; /* Cor do link "Registre-se aqui" */
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-weight: bold; /* Coloca o link em negrito */
+}
+
+.form-container p a:hover {
+    color: #0056b3; /* Cor do link ao passar o mouse */
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
