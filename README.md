@@ -4,9 +4,9 @@
 O projeto é uma aplicação para gerenciar uma loja de brinquedos. O objetivo é permitir a criação, leitura, atualização e exclusão de informações sobre brinquedos em um sistema centralizado. Este sistema pode ser utilizado por funcionários da loja para gerenciar o inventário de brinquedos, bem como por outras partes interessadas para interagir com as informações de forma programática. Além disso, ele contém o Spring Security, no qual é necessário uma autenticação (login) para que o usuário acesse os outros endpoints
 
 ## Tecnologias utilizadas
-- *IDE:* IntelliJ
-- *Linguagem:* Java
-- *Framework:* Spring Boot 
+- **IDE:** IntelliJ
+- **Linguagem:** Java
+- **Framework:** Spring Boot 
 
 # Funcionalidades do Projeto
 ## Gerenciamento de Brinquedos:
@@ -27,11 +27,11 @@ O uso de anotações de validação no BrinquedoDTO garante que os dados recebid
 
 ## Endpoints
 
-- *Listar Brinquedos:* GET /brinquedos/listar
-- *Obter Brinquedo por ID:* GET /brinquedos/{id}
-- *Cadastrar Brinquedo:* POST /brinquedos/cadastrar
-- *Atualizar Brinquedo:* PUT /brinquedos/{id}
-- *Deletar Brinquedo:* DELETE /brinquedos/{id}
+- **Listar Brinquedos:** GET /brinquedos/listar
+- **Obter Brinquedo por ID:** GET /brinquedos/{id}
+- **Cadastrar Brinquedo:** POST /brinquedos/cadastrar
+- **Atualizar Brinquedo:** PUT /brinquedos/{id}
+- **Deletar Brinquedo:** DELETE /brinquedos/{id}
 
 ## Integrantes
 
